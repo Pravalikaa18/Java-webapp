@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Pravalikaa18/Java-webapp.git'
+                git branch: 'main', url: 'https://github.com/Pravalikaa18/Java-webapp.git'
             }
         }
         stage('Build') {
