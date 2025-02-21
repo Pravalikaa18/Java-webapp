@@ -12,13 +12,19 @@ pipeline {
             }
         }
         stage('Build') {
-          
+          steps {
+                sh 'ls -la'
+            }
         }
         stage('Test') {
-        
+        steps {
+                sh 'ls -la'
+            }
         }
         stage('Deploy to Tomcat') {
-          
+          steps {
+                sh 'ls -la'
+            }
         }
     }
 }
