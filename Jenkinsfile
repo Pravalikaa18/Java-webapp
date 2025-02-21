@@ -9,7 +9,7 @@ pipeline {
         stage('List files in workspace') {
             steps {
                 sh 'ls -la'
-                sh 'mvn clean package'
+                
             }
         }
         stage('Build') {
